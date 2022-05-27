@@ -15,8 +15,8 @@ def home():
     jp.Div(a=div1, text="Yet another div", classes="text-gray-600")
 
     div2 = jp.Div(a=div, classes="grid grid-cols-2 gap-4")
-    jp.Button(a=div2, text="Calculate", click = sum_up, in1=in_1, in2=in_2,
-              d = d_output,
+    jp.Button(a=div2, text="Calculate", click=sum_up, in1=in_1, in2=in_2,
+              d=d_output,
               classes="border border-blue-500 m-2 py-1 px-4 rounded "
                       "text-blue-600 hover:bg-red-500 hover:text-white")
     jp.Div(a=div2, text="I am a cool interactive div!", mouseenter=mouse_enter,

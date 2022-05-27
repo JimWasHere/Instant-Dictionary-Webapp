@@ -1,8 +1,13 @@
+import pandas
+
+
 class Definition:
 
     def __init__(self, term):
         self.term = term
 
     def get(self):
-        pass
+        df = pandas.read_csv("data.csv")
+        return tuple(df.loc[df.word == self.term].definition)
+
 
